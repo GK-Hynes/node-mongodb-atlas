@@ -1,5 +1,10 @@
+require("dotenv").config();
 const express = require("express");
+const connectDB = require("./db");
 const port = 3000;
+
+// Connect to database
+connectDB();
 
 const app = express();
 
